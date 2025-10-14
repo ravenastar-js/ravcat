@@ -1,3 +1,23 @@
+const { readFileSync } = require('fs');
+const { join } = require('path');
+
+/**
+ * 📦 Obtém versão do package.json
+ * @returns {string} 🏷️ Versão da aplicação ou 'BETA' como fallback
+ * @throws {Error} 🚨 Se não conseguir ler ou parsear o package.json
+ */
+
+function getVersion() {
+  try {
+    const packagePath = join(__dirname, '..', '..', 'package.json');
+    return JSON.parse(readFileSync(packagePath, 'utf8')).version || 'BETA';
+  } catch (error) {
+    return 'BETA';
+  }
+}
+
+var version = getVersion()
+
 const figlet = require("figlet");
 let boxen;
 try {
@@ -33,8 +53,9 @@ class HeaderRenderer {
       this.displaySimpleHeader();
       return;
     }
-
+   
     try {
+      
       const bannerText = figlet.textSync("RAVCAT", {
         font: "Standard",
         horizontalLayout: "default",
@@ -44,7 +65,7 @@ class HeaderRenderer {
       const content = [
         "",
         colors.action(bannerText),
-        colors.highlight2(`🌱 v${CONSTANTS.VERSION}`),
+        colors.highlight2(`🌱 v${version}`),
         "",
         colors.subtitle("🔍 Sistema de Consulta de Contatos"),
         "",
@@ -52,7 +73,7 @@ class HeaderRenderer {
         colors.text("🔗 ") + colors.link("https://ravenastar.link"),
         "",
         colors.text("📱 Compatível com Termux"),
-        colors.text("⚡ Rápido • 🎯 Preciso • 🔧 Confiável"),
+        colors.text("⚡ Rápido • Preciso • 🔧 Confiável"),
         "",
       ].join("\n");
 
@@ -83,7 +104,7 @@ class HeaderRenderer {
     console.log(colors.title("║ 🚨 RAVCAT CLI                                                ║"));
     console.log(colors.title("║ Sistema de Consulta de Contatos              ║"));
     console.log(colors.title("╚══════════════════════════════════════════════════════════════╝"));
-    console.log(colors.highlight2(`🌱 v${CONSTANTS.VERSION}`));
+    console.log(colors.highlight2(`🌱 v${version}`));
     console.log(colors.text("Feito com 💚 por RavenaStar"));
     console.log("");
   }
