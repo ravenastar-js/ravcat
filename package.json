@@ -1,6 +1,6 @@
 {
   "name": "ravcat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "📬 Ferramenta CLI básica desenvolvida para centralizar informações de contato de entidades oficiais relacionadas a phishing, abuso, falsos positivos e muito mais.",
   "main": "src/index.js",
   "bin": {
