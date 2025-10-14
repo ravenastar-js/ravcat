@@ -1,5 +1,13 @@
 
 
+
+<div align="center">
+
+<a href="https://www.npmjs.com/package/ravcat" target="_blank"><img src="https://img.shields.io/badge/-ravcat-c40404?style=flat-square&labelColor=c40404&logo=npm&logoColor=white&link=https://www.npmjs.com/package/ravcat" height="40" /></a>  
+ <a href="https://www.npmjs.com/package/ravcat" target="_blank"><img alt="NPM Version" src="https://img.shields.io/npm/v/ravcat?style=flat-square&logo=npm&labelColor=c40404&color=c40404" height="40" ></a>
+
+---
+
 <div align="center">
 
 # 📬 RavCat
