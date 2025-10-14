@@ -1,0 +1,41 @@
+{
+  "app": {
+    "name": "RavCat",
+    "author": "RavenaStar",
+    "website": "https://ravenastar.link"
+  },
+  "data": {
+    "url": "https://github.com/ravenastar-js/gd/raw/refs/heads/main/report.json",
+    "cacheDuration": 3600000,
+    "timeout": 10000,
+    "userAgent": "RavCat-CLI/1.0.0",
+    "retryAttempts": 3,
+    "retryDelay": 2000
+  },
+  "virustotal": {
+    "url": "https://github.com/ravenastar-js/gd/raw/refs/heads/main/db/vtfp.json",
+    "cacheDuration": 86400000,
+    "timeout": 15000
+  },
+  "colors": {
+    "primary": "#06D6A0",
+    "secondary": "#FFD166",
+    "action": "#57f287",
+    "danger": "#EF476F",
+    "info": "#118AB2",
+    "title": "#57f287",
+    "subtitle": "#FFFFFF",
+    "highlight": "#F18F01",
+    "highlight2": "#f8e789",
+    "text": "#E9ECEF",
+    "muted": "#7F8C8D",
+    "link": "#8ad4ff",
+    "success": "#57f287",
+    "contact": "#8ad4ff",
+    "description": "#95E1D3",
+    "error": "#EF476F",
+    "warning": "#FFD166",
+    "exit": "#ffb3ba",
+    "back": "#bae1ff"
+  }
+}
