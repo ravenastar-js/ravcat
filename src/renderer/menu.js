@@ -12,36 +12,36 @@ class MenuRenderer {
    * @method createMainMenu
    * @returns {Array<Object>}
    */
-static createMainMenu() {
-  return [
-    {
-      name: `${colors.primary("📬")} Serviço/empresas: Denúncia de phishing para hospedagem, registradores e afins.`,
-      value: "companies_menu",
-      short: "Serviços/Empresas",
-    },
-    {
-      name: `${colors.warning("🛡️")} VirusTotal: Contatos para Falsos Positivos`,
-      value: "virustotal_fp",
-      short: "VirusTotal FP",
-    },
-    {
-      name: `${colors.danger("🚨")} Denúncia Rápida`,
-      value: "quick_report",
-      short: "Denúncia Rápida",
-    },
-    new inquirer.Separator(colors.muted('─'.repeat(30))),
-    {
-      name: `${colors.info("ℹ️")} Sobre o RavCat`,
-      value: "about",
-      short: "Sobre",
-    },
-    {
-      name: `${colors.danger("❌")} Sair`,
-      value: "exit",
-      short: "Sair"
-    }
-  ];
-}
+  static createMainMenu() {
+    return [
+      {
+        name: `${colors.primary("📬")} Serviço/empresas: Denúncia de phishing para hospedagem, registradores e afins.`,
+        value: "companies_menu",
+        short: "Serviços/Empresas",
+      },
+      {
+        name: `${colors.warning("🛡️")} VirusTotal: Contatos para Falsos Positivos`,
+        value: "virustotal_fp",
+        short: "VirusTotal FP",
+      },
+      {
+        name: `${colors.danger("🚨")} Denúncia Rápida`,
+        value: "quick_report",
+        short: "Denúncia Rápida",
+      },
+      new inquirer.Separator(colors.muted('─'.repeat(30))),
+      {
+        name: `${colors.info("ℹ️")} Sobre o RavCat`,
+        value: "about",
+        short: "Sobre",
+      },
+      {
+        name: `${colors.danger("❌")} Sair`,
+        value: "exit",
+        short: "Sair"
+      }
+    ];
+  }
 
   /**
    * 🏠 Cria rodapé padrão para todos os menus

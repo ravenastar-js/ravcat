@@ -108,7 +108,7 @@ class BoxRenderer {
       borderColor: '#57f287',
       borderStyle: 'round',
       backgroundColor: '#1a1a1a',
-      width: Math.min(this.terminalWidth - 4, 76),
+      width: Math.min(this.terminalWidth - 8, 70),
       textAlignment: 'center',
       float: 'center',
     };

@@ -326,7 +326,7 @@ class Menu {
       borderColor: "#57f287",
       borderStyle: "classic",
       backgroundColor: "#1a1a1a",
-      width: Math.min(this.terminalWidth - 8, 80),
+      width: Math.min(this.terminalWidth - 8, 70),
       textAlignment: "left",
     });
 

@@ -53,9 +53,9 @@ class HeaderRenderer {
       this.displaySimpleHeader();
       return;
     }
-   
+
     try {
-      
+
       const bannerText = figlet.textSync("RAVCAT", {
         font: "Standard",
         horizontalLayout: "default",
